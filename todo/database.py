@@ -3,8 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from typing import Any
 
 # Replace the connection details with your Neon database information
-SQLALCHEMY_DATABASE_URL = "postgresql://HassanZaib97:31xHIgsSrqFB@ep-winter-shadow-01178524.us-east-2.aws.neon.tech/neondb?sslmode=require"
-
+SQLALCHEMY_DATABASE_URL = "sql key"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 print(SessionLocal)
